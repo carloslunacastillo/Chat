@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class Servidor  {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		
 		MarcoServidor mimarco=new MarcoServidor();
 		
