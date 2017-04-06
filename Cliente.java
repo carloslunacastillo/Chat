@@ -69,6 +69,8 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 	
 	public LaminaMarcoCliente(){
                 String nick_usuario=JOptionPane.showInputDialog(null,"Nick: ");
+		
+		ipServer=JOptionPane.showInputDialog(null,"Ingrese Ip del Servidor: ");
                 
                 JLabel n_nick = new JLabel("Nick: ");
                 
@@ -148,7 +150,7 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
                //System.out.println(campo1.getText());
                 try {  
                     
-                    Socket miSocket = new Socket("192.168.0.8",9999);
+                    Socket miSocket = new Socket(ipServer,9999);
                     
                     PaqueteEnvio datos = new PaqueteEnvio();
                     
@@ -179,5 +181,6 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
         private JLabel nick;
 	private JTextArea areaChat;
 	private JButton miboton;
+	private String ipServer;
 	
 }
