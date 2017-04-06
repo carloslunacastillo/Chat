@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class Cliente {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		
 		MarcoCliente mimarco=new MarcoCliente();
 		
